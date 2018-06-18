@@ -1,0 +1,31 @@
+{
+  "name": "imagegallery",
+  "version": "1.0.0",
+  "description": "Responsive, animated image gallery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KuhnSteven/ImageGallery.git"
+  },
+  "keywords": [
+    "Animation",
+    "Responsive",
+    "Image",
+    "Gallery",
+    "DWS2"
+  ],
+  "author": "Kuhn, Steven",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KuhnSteven/ImageGallery/issues"
+  },
+  "homepage": "https://github.com/KuhnSteven/ImageGallery#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
