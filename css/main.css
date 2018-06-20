@@ -1,0 +1,95 @@
+@media only screen and (max-width: 800px) {
+  main {
+    padding: 20px; }
+  .imageIcons {
+    width: 15px;
+    height: 15px; } }
+
+@media only screen and (min-width: 801px) {
+  main {
+    padding: 50px; }
+  figure {
+    width: 25%;
+    max-width: 350px;
+    height: auto;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #6a6a6a;
+    margin: 5px; }
+    figure img {
+      width: 100%;
+      height: 100%; }
+  .imageIcons {
+    width: 40px;
+    height: 40px; } }
+
+figure {
+  overflow: hidden;
+  position: relative;
+  z-index: 1; }
+
+img {
+  position: relative; }
+
+svg {
+  position: relative;
+  z-index: 1; }
+  svg rect {
+    width: 100%;
+    height: 100px; }
+
+.imageIcons {
+  position: relative;
+  z-index: 2;
+  display: block;
+  bottom: 100px;
+  margin: 5px;
+  margin-bottom: 10px; }
+
+html {
+  background-color: #9f9f9f; }
+
+header {
+  background-color: rgba(72, 38, 123, 0.5);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%; }
+  header #logo {
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    background-color: white;
+    margin: 25px; }
+  header #logoQuote {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #6a6a6a; }
+
+body {
+  margin: 0px; }
+
+mark {
+  color: #6a6a6a;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: bold; }
+
+main {
+  border-left-color: #6a6a6a;
+  border-left-style: ridge;
+  border-left-width: 5px;
+  border-right-color: #6a6a6a;
+  border-right-style: ridge;
+  border-right-width: 5px;
+  margin: 15px; }
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 15px; }
