@@ -1,6 +1,7 @@
 @import 'partials/_mixin';
 @import 'partials/_variables';
 @import 'partials/_partialStyles';
+@import 'partials/_interactiveStyles';
 
 html {
     background-color: $backgroundColor;
@@ -45,7 +46,6 @@ mark {
 }
 
 main {
-
     border-left-color: $fadedColor;
     border-left-style: ridge;
     border-left-width: 5px;
@@ -53,6 +53,27 @@ main {
     border-right-style: ridge;
     border-right-width: 5px;
     margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+ul {
+    background-color: grey;
+    padding: 15px;
+    
+    li {
+        margin: 10px;
+        margin-left: 25px;
+    }
+
+    li:first-of-type {
+        list-style-image: src("graphics/user-icon.svg");
+    }
+
+    li:last-of-type {
+        list-style-image: src("graphics/heart.svg");
+    }
 }
 
 footer {
