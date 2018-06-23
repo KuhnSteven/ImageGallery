@@ -1,6 +1,6 @@
 // Searchphotos search point
 const access = `948e6f9f13e390b27e8cbb13b1d3d123e0a006b2980e65aec99db8456bf6221a`;
-const endPoint = `https://api.unsplash.com/search/photos?client_id=${access}&query=planes`;
+const endPoint = `https://api.unsplash.com/search/photos?client_id=${access}&query=trains`;
 
 //Selectors
 const main = document.querySelector("main");
