@@ -27,7 +27,12 @@ function dataCollector(data)
     {
         content +=
         `<figure>
-            <img src="${result.urls.regular}" alt="${result.description}">
+            <img src="${result.urls.full}"
+            srcset="${result.urls.small} 300w,
+                ${result.urls.regular} 600w,
+                ${result.urls.full} 800w"
+
+            sizes="(min-width: 800px) 50vw, 100vw, " alt="${result.description}" />
             <ul>
                 <li><a href="${result.user.links.html}">${result.user.name}</a></li>
                 <li>${result.likes}</li>
@@ -35,4 +40,7 @@ function dataCollector(data)
         </figure>`
     })
     main.innerHTML = content;
+
+    // Flexbox powered image sizing:
+    // <img src="${result.urls.regular}" alt="${result.description}">
 }
