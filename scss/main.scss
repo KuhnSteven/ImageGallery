@@ -4,23 +4,27 @@
 @import 'partials/_interactiveStyles';
 
 html {
-    background-color: $backgroundColor;
+    background-color: $white;
 }
 
 header {
-    background-color: $primaryColor;
+    background-color: $white;
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 100%;
 
-    #logo {
-        width: 50px;
+    h1 {
+        margin: 0px;
         margin-left: auto;
         margin-right: auto;
-        padding: 25px;
-        background-color: $white;
-        margin: 25px;
+    }
+
+    #logo {
+        width: 50px;
+        margin-top: 25px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #logoQuote {
@@ -54,12 +58,20 @@ main {
     border-right-width: 5px;
     margin: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
+img {
+    z-index: 1;
+    width: 100%;
+    height: auto;
+}
+
 ul {
+    z-index: 2;
     background-color: grey;
+    opacity: 0.75;
     padding: 15px;
     
     li {
@@ -68,11 +80,11 @@ ul {
     }
 
     li:first-of-type {
-        list-style-image: src("graphics/user-icon.svg");
+        list-style-image: url("/graphics/user-icon.svg");
     }
 
     li:last-of-type {
-        list-style-image: src("graphics/heart.svg");
+        list-style-image: url("/graphics/heart.svg");
     }
 }
 
@@ -80,4 +92,5 @@ footer {
     display: flex;
     justify-content: center;
     margin: 15px;
+    margin-bottom: 50px;
 }

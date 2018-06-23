@@ -27,11 +27,11 @@ function dataCollector(data)
     {
         content +=
         `<figure>
+            <img src="${result.urls.regular}" alt="${result.description}">
             <ul>
                 <li><a href="${result.user.links.html}">${result.user.name}</a></li>
                 <li>${result.likes}</li>
             </ul>
-            <img src="${result.urls.regular}" alt="${result.description}">
         </figure>`
     })
     main.innerHTML = content;
